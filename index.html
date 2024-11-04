@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raheen Herbalicious Hair Oil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+    <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.svg" class="logo" alt="Brand Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Marquee -->
+<div class="marquee">
+    <p>राहीन हर्बलिशियस में आपका स्वागत है, हम आयुर्वेदिक तेल के माध्यम से सर्वोत्तम हेयरकेयर समाधान प्रदान करने के लिए समर्पित हैं।</p>
+</div>
+
+<!-- Info Section -->
+<section class="info-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-2.5 info-item">
+                <div class="info-content">
+                    <h6><i class="fas fa-clock"></i> Working Hours</h6>
+                    <p>Mon to Sat 09:00 am - 7:00 pm</p>
+                </div>
+            </div>
+            <div class="col-md-2.5 info-item">
+                <div class="info-content">
+                    <h6><i class="fas fa-map-marker-alt"></i> Shop Address</h6>
+                    <p>63C-5 Pakka Bagh kheto Wali Masjid Asalatpura Moradabad<br> Uttar Pradesh India 244001</p>
+                </div>
+            </div>
+            <div class="col-md-2.5 info-item">
+                <div class="info-content">
+                    <h6><i class="fas fa-envelope"></i> Get In Touch</h6>
+                    <p><a href="mailto:herbaliciousraheen@gmail.com">herbaliciousraheen@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="col-md-2.5 info-item">
+                <div class="info-content">
+                    <h6><i class="fas fa-headset"></i> Quick Help</h6>
+                    <p>We are ready to help you 24x7</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="product-showcase">
+    <h2>Featured Products</h2>
+    <div class="product-image-container">
+        <div class="product-images">
+            <img src="assets/images/order1.jpg" alt="Product 1">
+            <img src="assets/images/front_back.jpg" alt="Product 2">
+            <img src="assets/images/order1.jpg" alt="Product 3">
+            <img src="assets/images/front_back.jpg" alt="Product 4">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+</section>
+
+<div class="button-container">
+    <a href="product-page.html" class="order-now-button">Order Now</a>
+</div>
+
+
+
+
+
+<!-- HTML -->
+<section class="product-section py-5">
+    <div class="container">
+        <!-- Left Column: Usage Instructions -->
+        <div class="product-column scroll-fade">
+            <h3>How to Use for Best Results:</h3>
+            <ul>
+                <li>Pour 20-25 ml into a small container.</li>
+                <li>Massage the oil into your scalp thoroughly.</li>
+                <li>Allow it to soak for a minimum of 2 hours ( For the best outcome, let it rest overnight for maximum impact.).</li>
+                <li>Wash your hair with lukewarm water and shampoo.</li>
+            </ul>
+        </div>
+
+        <!-- Right Column: Key Benefits -->
+        <div class="product-column scroll-fade">
+            <h4>Key Benefits:</h4>
+            <ul>
+                <li>Treat hair loss and reduces hair fall.</li>
+                <li>Promotes hair growth.</li>
+                <li>Nourishes and hydrates the scalp.</li>
+                <li>Adds shine to your hair.</li>
+                <li>Helps prevent dandruff.</li>
+            </ul>
+        </div>
+    </div>
+    <p class="highlighted-benefit scroll-fade">IMPROVE OVERALL TEXTURE OF HAIR</p>
+</div>
+</section>
+
+<!-- JavaScript for Scroll Animation -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const scrollElements = document.querySelectorAll(".scroll-fade");
+
+        const elementInView = (el, divisor = 1) => {
+            const elementTop = el.getBoundingClientRect().top;
+            return elementTop <= (window.innerHeight || document.documentElement.clientHeight) / divisor;
+        };
+
+        const displayScrollElement = (element) => {
+            element.classList.add("visible");
+        };
+
+        const hideScrollElement = (element) => {
+            element.classList.remove("visible");
+        };
+
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el, 1.25)) {
+                    displayScrollElement(el);
+                } else {
+                    hideScrollElement(el);
+                }
+            });
+        };
+
+        window.addEventListener("scroll", handleScrollAnimation);
+    });
+</script>
+
+    
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <h5>Contact Us</h5>
+        <div class="contact-info">
+            <a href="https://wa.me/+918791867467" target="_blank" class="contact-link">
+                <i class="fab fa-whatsapp contact-icon"></i> +91 8791867467
+            </a>
+            <a href="tel:8791867467" class="contact-link">
+                <i class="fas fa-phone-alt contact-icon"></i> +91 8791867467
+            </a>
+            <a href="mailto:herbaliciousraheen@gmail.com" class="contact-link">
+                <i class="fas fa-envelope contact-icon"></i> herbaliciousraheen@gmail.com
+            </a>
+            <a href="https://www.instagram.com/raheen_herbalicious" target="_blank" class="contact-link">
+                <i class="fab fa-instagram contact-icon"></i> raheen_herbalicious
+            </a>
+        </div>
+        <p>&copy; Natural herbal Hair Oil. All rights reserved.</p>
+        <p>devleoped & designed by _______</p>
+    </div>
+</footer>
+
+<div class="whatsapp-float" onclick="openWhatsApp()">
+    <img src="assets/images/WhatsApp_icon.png" alt="WhatsApp Chat">
+</div>
+<script>
+function openWhatsApp() {
+    const phoneNumber = "918791867467"; // Replace with your phone number in international format without "+"
+    const whatsappURL = `https://wa.me/${phoneNumber}`;
+    window.open(whatsappURL, "_blank");
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
